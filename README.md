@@ -96,9 +96,9 @@ Ensure you have the following installed:
    - **Cassandra**: Port `9042`
 
 ---
-
-## Workflow
 ![Workflow Architecture](architecture/workflow_file/workflow.png)
+## Workflow
+
 1. **Kafka**: Real-time data is ingested into Kafka topics.
 ![Kafka Architecture](architecture/kafka/Home.png)
 ![Kafka Architecture](architecture/kafka/data_view.png)
