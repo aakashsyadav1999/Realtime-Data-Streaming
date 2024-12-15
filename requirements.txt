@@ -1,0 +1,12 @@
+apache-airflow
+kafka-python-ng
+cassandra-driver
+spark
+pyspark
+pandas
+pyarrow
+python-snappy
+lz4
+scales
+cassandra-driver[cle]
+cryptography
