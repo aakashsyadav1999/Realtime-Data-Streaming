@@ -12,7 +12,7 @@ This project demonstrates a real-time data streaming pipeline, covering all phas
 - **Python**: For scripting and custom logic implementation.
 
 ---
-
+![Workflow](architecture/workflow_file/workflow.png)
 ## Project Structure
 ```
 REALTIME_DATA_STREAMING/
@@ -117,9 +117,6 @@ Ensure you have the following installed:
 ![Docker-Compose Architecture](architecture/docker/compose_up.png)
 ![Docker-Compose Architecture](architecture/docker/docker_UI.png)
 ![Docker-Compose Architecture](architecture/docker/entrypoint.png)
-6. **Full Workflow**: Workflow.
-![Workflow Architecture](architecture/workflow_file/workflow.png)
-
 ---
 
 ## Key Files Explained
