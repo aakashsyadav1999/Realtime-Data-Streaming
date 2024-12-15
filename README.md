@@ -51,7 +51,7 @@ REALTIME_DATA_STREAMING/
    - Stores processed data efficiently.
 5. **Apache Airflow**
    - Manages the entire pipeline workflow.
-6. **Docker**
+6. **Docker-Compose**
    - Streamlines deployment of all components as containers.
 7. **Python**
    - Core programming language for scripting and orchestration.
@@ -98,16 +98,26 @@ Ensure you have the following installed:
 ---
 
 ## Workflow
+![Kafka Architecture](architecture/workflow/workflow.png)
 1. **Kafka**: Real-time data is ingested into Kafka topics.
 ![Kafka Architecture](architecture/kafka/Home.png)
 ![Kafka Architecture](architecture/kafka/data_view.png)
 ![Kafka Architecture](architecture/kafka/controlcenter.png)
 ![Kafka Architecture](architecture/kafka/messages.png)
-![Kafka Architecture](architecture/kafka/final_results.png)
+![Kafka Architecture](architecture/kafka/final_result.png)
 2. **Airflow**: Triggers DAG (`kafka_stream.py`) to ensure Kafka is ingesting data.
+![Airflow Architecture](architecture/end_to_end_flow_kafka_docker_airflow/trigger_manually.png)
+![Airflow Architecture](architecture/end_to_end_flow_kafka_docker_airflow/dag_triggered.png)
+![Airflow Architecture](architecture/end_to_end_flow_kafka_docker_airflow/data_incoming.png)
 3. **Spark**: Reads data from Kafka topics, processes it, and prepares it for storage.
+![Spark Architecture](architecture/spark/home.png)
 4. **Cassandra**: Stores the processed data efficiently for querying.
-
+![Cassandra Architecture](architecture/cassandra/describe_method.png)
+5. **Docker-Compose-yml**: Streamlines deployment of all components as containers.
+![Docker-Compose Architecture](architecture/docker/docker_compose_file.png)
+![Docker-Compose Architecture](architecture/docker/compose_up.png)
+![Docker-Compose Architecture](architecture/docker/docker_UI.png)
+![Docker-Compose Architecture](architecture/docker/entrypoint.png)
 ---
 
 ## Key Files Explained
