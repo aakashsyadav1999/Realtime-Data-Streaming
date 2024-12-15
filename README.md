@@ -98,6 +98,7 @@ Ensure you have the following installed:
 ---
 
 ## Workflow
+![Workflow Architecture](architecture/workflow/workflow.png)
 1. **Kafka**: Real-time data is ingested into Kafka topics.
 ![Kafka Architecture](architecture/kafka/Home.png)
 ![Kafka Architecture](architecture/kafka/data_view.png)
@@ -117,7 +118,7 @@ Ensure you have the following installed:
 ![Docker-Compose Architecture](architecture/docker/compose_up.png)
 ![Docker-Compose Architecture](architecture/docker/docker_UI.png)
 ![Docker-Compose Architecture](architecture/docker/entrypoint.png)
-![Workflow Architecture](architecture/workflow/workflow.png)
+
 ---
 
 ## Key Files Explained
